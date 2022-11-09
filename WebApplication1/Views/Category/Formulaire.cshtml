@@ -1,0 +1,28 @@
+﻿@using Azure.Core
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<FORM  METHOD = "post"> 
+
+
+<div class="form-group">
+    <label class="col-form-label mt-4" for="inputDefault">Name</label>
+    <input name="categorie_name" type="text" class="form-control" placeholder="Name" id="inputDefault">
+</div>
+<div class="form-group">
+    <label class="col-form-label mt-4" for="inputDefault">Display Order</label>
+    <input name="DisplayOrder"type="text" class="form-control" placeholder="Display Order" id="inputDefault">
+</div>
+<div>
+<input type="submit" class="btn btn-primary" value="Add"/input>
+    <a class="btn btn-primary" asp-area="" asp-controller="Category" asp-action="Index">
+        <input type="button" class="btn btn-primary" value="Go Back" />
+    </a>
+</div>
+
+
+</FORM> 
